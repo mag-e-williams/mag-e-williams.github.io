@@ -11,7 +11,7 @@ a, p, h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-family: Georgia;
+  font-family: "Georgia";
   font-style: normal;
   font-weight: lighter;
   font-size: 38px;
@@ -20,8 +20,9 @@ h1 {
   align-items: flex-end;
 }
 
+
 .navbar-brand {
-  font-family: Ropa Sans;
+  font-family: "Ropa Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 48px;
@@ -34,7 +35,7 @@ nav {
 
 
 .image-banner {
-  background-image: url("../assets/images/header_images/image 4.png");
+  background-image: url("../assets/images/header_images/image4.png");
   height: 345px;
   background-position: center;
   background-repeat: no-repeat;
@@ -57,7 +58,7 @@ nav {
 }
 
 .sidebar {
-  font-family: Helvetica Neue;
+  font-family: "Helvetica Neue";
 }
 
 .sidebar h3 {
@@ -73,6 +74,7 @@ nav {
   line-height: 19px;
   letter-spacing: 0.1em;
   margin-left: 10px;
+  width: 100%
 }
 
 .sidebar ul li a:hover {
@@ -94,7 +96,6 @@ nav li {
 nav li a {
   display: block;
   color: #3D383B;
-  text-align: bottom;
   padding: 14px 16px;
   text-decoration: none;
 
@@ -117,7 +118,7 @@ nav .nav-items li a:hover::after {
 
 .nav-items {
   float: right;
-  font-family: Ropa Sans;
+  font-family: "Ropa Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -133,7 +134,7 @@ div.gallery img {
 
 div.desc {
   text-align: left;
-  font-family: Helvetica Neue;
+  font-family: "Helvetica Neue";
   font-style: normal;
   line-height: 10px;
   letter-spacing: 0.1em;
@@ -184,7 +185,6 @@ div .desc .card-subtitle {
 
 .column {
   float: left;
-  padding: 10px;
 }
 
 .column.fill-half {
@@ -209,7 +209,7 @@ div .desc .card-subtitle {
   width: 75%;
 }
 
-.column.c60.image {
+.column.c60.image_pouf {
   background-image: url("../assets/images/product_images/pouf.jpg");
   height: 850px;
   background-position: center;
@@ -218,15 +218,38 @@ div .desc .card-subtitle {
   position: relative;
 }
 
-.column.c40 {
+.column.c60.image_decorative_pillow {
+  background-image: url("../assets/images/product_images/image9-1.png");
+  height: 850px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.column.c40.detail {
   height: 850px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
+.column.c60.about {
+  height: 720px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.column.c60.about {
+  height: 720px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 .column.fill-half.image {
-  background-image: url("../assets/images/header_images/image 5.png");
+  background-image: url("../assets/images/header_images/image5.png");
   height: 520px;
   background-position: center;
   background-repeat: no-repeat;
@@ -249,7 +272,7 @@ div .desc .card-subtitle {
 }
 
 p.subtitle {
-  font-family: Helvetica Neue;
+  font-family: "Helvetica Neue";
   text-transform: uppercase;
   font-style: normal;
   font-weight: 500;
@@ -262,7 +285,7 @@ p.subtitle {
 }
 
 .index-page.banner-text h1 {
-  font-family: Georgia;
+  font-family: "Georgia";
   font-style: normal;
   font-weight: normal;
   font-size: 55px;
@@ -281,7 +304,7 @@ a.button {
   border-radius: 5px;
   padding: 20px 50px;
 
-  font-family: Helvetica Neue;
+  font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
@@ -321,7 +344,7 @@ a.button:hover {
 }
 
 .footer h3 {
-  font-family: Ropa Sans;
+  font-family: "Ropa Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -357,7 +380,7 @@ a.button:hover {
 }
 
 button.accordion {
-  font-family: Helvetica Neue;
+  font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -379,7 +402,7 @@ div.detail-page.text {
 
 .detail-page h1 {
   width: 100%;
-  font-family: Helvetica Neue;
+  font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
@@ -389,7 +412,7 @@ div.detail-page.text {
 }
 
 .detail-page p.reviews, .detail-page p.details-subtitle {
-  font-family: Helvetica Neue;
+  font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -407,7 +430,7 @@ div.detail-page.text {
 }
 
 .detail-page p {
-  font-family: Helvetica Neue;
+  font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -427,8 +450,8 @@ div.detail-page.text {
 }
 
 .color-select {
-  margin: 20px 0px 40px 0px;
-  .display: block;
+  margin: 10px 0px 40px 0px;
+  display: block;
   width: 100%
 }
 
@@ -455,9 +478,6 @@ div.detail-page.text {
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
