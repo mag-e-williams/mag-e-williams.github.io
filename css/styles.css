@@ -53,6 +53,7 @@ nav {
 
 .banner-text h1 {
   color: white;
+  font-size: 65px
 }
 
 .sidebar {
@@ -186,6 +187,10 @@ div .desc .card-subtitle {
   padding: 10px;
 }
 
+.column.fill-half {
+  width: 50%;
+}
+
 .column.sidebar {
   width: 25%;
 }
@@ -193,4 +198,92 @@ div .desc .card-subtitle {
 .column.gallery {
   width: 75%;
 }
+
+.column.fill-half.image {
+  background-image: url("../assets/images/header_images/image 5.png");
+  height: 520px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.column.fill-half.blue-background {
+  background-color: #F0F5F8;
+  height: 520px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.index-page.banner-text {
+  width: 80%;
+  text-align: center;
+}
+
+p.subtitle {
+  font-family: Helvetica Neue;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  letter-spacing: 0.1em;
+
+  color: #3D383B;
+}
+
+.index-page.banner-text h1 {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 55px;
+  line-height: 62px;
+  text-align: center;
+
+  color: #3D383B;
+}
+
+
+.index-page.banner-text a.button { 
+
+  text-decoration: none;
+
+  background: #3D383B;
+  border-radius: 5px;
+  padding: 25px 50px;
+
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  letter-spacing: 0.1em;
+
+  color: #FFFFFF;
+
+} 
+
+.index-page.banner-text a.button:hover {
+  background-color: #181618;
+}
+
+.content {
+  float:left;
+  margin: 40px;
+}
+
+.responsive.bestsellers{
+  padding: 0 6px;
+  float: left;
+  width: 24.9%;
+  margin: 10px 0;
+}
+
+
 
