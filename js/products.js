@@ -1,7 +1,7 @@
 
 var categories = [ 'decorative pillows', 'bed pillows', 'poufs' ]
 
-var detail_page = "decorative_pillow.html"
+var detail_page = "product_detail.html"
 
 var products = [
 
@@ -235,15 +235,15 @@ var products = [
 
 var bestSellers = [ products[10], products[0], products[1], products[11] ]
 
-var decorativePillows =  products.filter(function(product) {
+var decorativePillows = products.filter(function(product) {
     return product.category == categories[0];
 });
 
-var bedPillows =  products.filter(function(product) {
+var bedPillows = products.filter(function(product) {
     return product.category == categories[1];
 });
 
-var poufs =  products.filter(function(product) {
+var poufs = products.filter(function(product) {
     return product.category == categories[2];
 });
 
@@ -261,22 +261,60 @@ function createProductCards(cardData, sectionID){
         var cardList = document.getElementById(sectionID);
 
         cardList.appendChild(tmpl);
-
     }
+}
+
+
+// function to create product detail using template 
+function createProductDetail(){
+    var productID = window.location.toString().split("#")[1]
+    var detailProduct = products.find(product => product.product_id == productID)
+
+    document.getElementById("product_price").innerHTML = "$" + detailProduct.price
+    document.getElementById("product_description").innerHTML = detailProduct.description
+    document.getElementById("product_name").innerHTML = detailProduct.name
+
+    var imgExt = '../assets/images/product_images/' + detailProduct.imgName
+    var imgURL = "url(" + "\'" + imgExt + "\'" + ")"
+
+    document.getElementById("product_img").style.backgroundImage = imgURL
+
+
 }
 
 var urlString = window.location;
 
-if (urlString.toString().includes("index")) {
-    createProductCards(bestSellers, "bestsellers-cards")
+function isIndexPage() {
+    return urlString.toString().includes("index")
 }
 
-if (urlString.toString().includes("products")) {
-    createProductCards(bedPillows, "bedPillow-cards")
-    createProductCards(decorativePillows, "decorativePillow-cards")
-    createProductCards(poufs, "pouf-cards")
+function isProductsPage() {
+    return urlString.toString().includes("products")
 }
 
+function isProductDetailPage() {
+    return urlString.toString().includes("product_detail")
+}
+
+
+function renderPage() {
+    if (isIndexPage()) {
+        createProductCards(bestSellers, "bestsellers-cards")
+    }
+
+    if (isProductsPage()) {
+        createProductCards(bedPillows, "bedPillow-cards")
+        createProductCards(decorativePillows, "decorativePillow-cards")
+        createProductCards(poufs, "pouf-cards")
+    }
+
+    if (isProductDetailPage()) {
+        createProductDetail()
+    }   
+}
+
+
+renderPage()
 
 
 
