@@ -1,6 +1,8 @@
 
 var categories = [ 'decorative pillows', 'bed pillows', 'poufs' ]
 
+var detail_page = "decorative_pillow.html"
+
 var products = [
 
     {
@@ -233,6 +235,25 @@ var products = [
 
 var bestSellers = [ products[10], products[0], products[1], products[11] ]
 
+
+// function to create cards using template 
+function createBestSellerCards(cardData){
+    for (var i = 0; i < bestSellers.length; i++) {
+        var card = cardData[i]
+        var tmpl = document.getElementById('card-template').content.cloneNode(true);
+        tmpl.querySelector('.name').innerText = card.name;
+        tmpl.querySelector('.price').innerText = "$" + card.price.toString();
+        tmpl.querySelector('.custom-card-img').src = "./assets/images/product_images/" + card.imgName;
+        tmpl.querySelector('.product-link').href = "./product_pages/" + detail_page + "#" + card.product_id.toString();
+
+        var cardList = document.getElementById('bestsellers-cards');
+
+        cardList.appendChild(tmpl);
+
+    }
+}
+
+createBestSellerCards(bestSellers)
 
 
 
