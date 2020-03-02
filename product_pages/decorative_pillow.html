@@ -7,6 +7,8 @@
         <link href="https://fonts.googleapis.com/css?family=Ropa+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../css/styles.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
         <meta name="description" content="Fluff Stuff">
         <meta name="author" content="Margret Williams">
         <title>Fluff Stuff</title>
@@ -93,8 +95,7 @@
                             </label>
                         </div>
 
-                        <a href="" class="button">Add To Cart</a>
-
+                        <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart button">Add to cart</a>
 
                         <div class="product-accordion">
 
@@ -136,22 +137,10 @@
             fluff stuff</h3>
         </div>
 
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
+    
+    <script src="../js/script.js"></script>
+    <script src="../js/shoppingCart.js"></script>
 
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-              panel.style.display = "none";
-            } else {
-              panel.style.display = "block";
-            }
-          });
-        }
-    </script>
 
     </body>
 
