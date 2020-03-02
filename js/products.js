@@ -235,10 +235,22 @@ var products = [
 
 var bestSellers = [ products[10], products[0], products[1], products[11] ]
 
+var decorativePillows =  products.filter(function(product) {
+    return product.category == categories[0];
+});
+
+var bedPillows =  products.filter(function(product) {
+    return product.category == categories[1];
+});
+
+var poufs =  products.filter(function(product) {
+    return product.category == categories[2];
+});
+
 
 // function to create cards using template 
-function createBestSellerCards(cardData){
-    for (var i = 0; i < bestSellers.length; i++) {
+function createProductCards(cardData, sectionID){
+    for (var i = 0; i < cardData.length; i++) {
         var card = cardData[i]
         var tmpl = document.getElementById('card-template').content.cloneNode(true);
         tmpl.querySelector('.name').innerText = card.name;
@@ -246,14 +258,30 @@ function createBestSellerCards(cardData){
         tmpl.querySelector('.custom-card-img').src = "./assets/images/product_images/" + card.imgName;
         tmpl.querySelector('.product-link').href = "./product_pages/" + detail_page + "#" + card.product_id.toString();
 
-        var cardList = document.getElementById('bestsellers-cards');
+        var cardList = document.getElementById(sectionID);
 
         cardList.appendChild(tmpl);
 
     }
 }
 
-createBestSellerCards(bestSellers)
+var urlString = window.location;
+
+if (urlString.toString().includes("index")) {
+    createProductCards(bestSellers, "bestsellers-cards")
+}
+
+if (urlString.toString().includes("products")) {
+    createProductCards(bedPillows, "bedPillow-cards")
+    createProductCards(decorativePillows, "decorativePillow-cards")
+    createProductCards(poufs, "pouf-cards")
+}
+
+
+
+
+
+
 
 
 
