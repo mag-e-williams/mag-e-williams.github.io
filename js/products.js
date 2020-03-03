@@ -3,8 +3,6 @@ var categories = [ 'decorative pillows', 'bed pillows', 'poufs' ]
 
 var detail_page = "product_detail.html"
 
-
-
 var products = [
 
     {
