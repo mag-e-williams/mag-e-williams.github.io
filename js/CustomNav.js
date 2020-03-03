@@ -25,7 +25,7 @@ class CustomNav extends HTMLElement {
                         <li class="nav-item"><a class="nav-link" href="../products.html">products</a></li>
                         <li class="nav-item"><a class="nav-link" href="../about.html">about</a></li>
                         <li class="nav-item"><a class="nav-link" href=""><i class="material-icons">search</i></a></li>
-                        <li class="nav-item"><a class="nav-link" href="cart.html"><i class="material-icons">shopping_cart</i><span id="cart-amt" class="badge"></span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="../cart.html"><i class="material-icons">shopping_cart</i><span id="cart-amt" class="badge"></span></a></li>
                         </div>
                     </ul>
                 </div>
@@ -56,9 +56,10 @@ class CustomNav extends HTMLElement {
             </nav> `;
 
         }
-
         
     }
+
+    
 }
 
 customElements.define('custom-nav', CustomNav);

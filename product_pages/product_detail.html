@@ -17,99 +17,105 @@
     </head>
     
     <body>
+
+        <div class="flex-wrapper">
+
+        <div class="container">
         
-        <custom-nav pageName="product_detail"></custom-nav>
+            <custom-nav pageName="product_detail"></custom-nav>
 
-        <div class="row">
+            <div class="row">
 
-            <div class="product-detail">
+                <div class="product-detail">
 
-                <div class="column c60 image_pouf" id="product_img">
-                </div>
+                    <div class="column c60 image_pouf" id="product_img">
+                    </div>
 
-                <div class="column c40 detail">
-                    <div class="detail-page text">
-                        <h1 id="product_name">Product Name
-                        </h1>
-                        <p class="reviews icons">
-                            <i class="material-icons">star</i>
-                            <i class="material-icons">star</i>
-                            <i class="material-icons">star</i>
-                            <i class="material-icons">star</i>
-                            <i class="material-icons">star_border</i>
-                        </p>
-                        <p class="details-subtitle">
-                            13 reviews
-                        </p>
-                        <p id="product_description"> product description 
-                        </p>
-
-                        <br />
-
-                        <div>
-                            <h3 id="product_price">
-                                product price 
-                            </h3>
-                        </div>
-
-                        <div class="color-select">
-
+                    <div class="column c40 detail">
+                        <div class="detail-page text">
+                            <h1 id="product_name">Product Name
+                            </h1>
+                            <p class="reviews icons">
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star_border</i>
+                            </p>
                             <p class="details-subtitle">
-                                4 colors available:
+                                13 reviews
+                            </p>
+                            <p id="product_description"> product description 
                             </p>
 
-                            <label class="container">
-                              <input type="radio" checked="checked" name="radio">
-                              <span class="checkmark dark-blue"></span>
-                            </label>
-                            <label class="container">
-                              <input type="radio" name="radio">
-                              <span class="checkmark yellow"></span>
-                            </label>
-                            <label class="container">
-                              <input type="radio" name="radio">
-                              <span class="checkmark pink"></span>
-                            </label>
-                            <label class="container">
-                              <input type="radio" name="radio">
-                              <span class="checkmark light-blue"></span>
-                            </label>
-                        </div>
+                            <br />
 
-
-                        <a class="add-to-cart button">Add To Cart</a>
-
-
-                        <div class="product-accordion">
-
-                            <button class="accordion active">
-                                <i class="material-icons">add</i>Overview
-                            </button>
-                            <div class="panel" style="display: block;">
-                              <p>KEY DETAILS <br />
-                              - Shell: 75% rayon, 25% nylon. <br />
-                              - Filling: Polyester and foam. <br />
-                              - Pre-filled; cover isn't removable. <br />
-                              - Sold individually.
-                              - Imported.</p>
+                            <div>
+                                <h3 id="product_price">
+                                    product price 
+                                </h3>
                             </div>
 
-                            <button class="accordion last">
-                                <i class="material-icons">add</i>Details + Dimensions
-                            </button>
-                            <div class="panel">
-                              <p>DIMENSIONS</p> <br />
-                              <p>- 24"diam. x 13"h.</p> <br />
+                            <div class="color-select">
+
+                                <p class="details-subtitle">
+                                    4 colors available:
+                                </p>
+
+                                <label class="radio-container">
+                                  <input type="radio" checked="checked" name="radio">
+                                  <span class="checkmark dark-blue"></span>
+                                </label>
+                                <label class="radio-container">
+                                  <input type="radio" name="radio">
+                                  <span class="checkmark yellow"></span>
+                                </label>
+                                <label class="radio-container">
+                                  <input type="radio" name="radio">
+                                  <span class="checkmark pink"></span>
+                                </label>
+                                <label class="radio-container">
+                                  <input type="radio" name="radio">
+                                  <span class="checkmark light-blue"></span>
+                                </label>
                             </div>
-                            
+
+
+                            <a class="add-to-cart button">Add To Cart</a>
+
+
+                            <div class="product-accordion">
+
+                                <button class="accordion active">
+                                    <i class="material-icons">add</i>Overview
+                                </button>
+                                <div class="panel" style="display: block;">
+                                  <p>KEY DETAILS <br />
+                                  - Shell: 75% rayon, 25% nylon. <br />
+                                  - Filling: Polyester and foam. <br />
+                                  - Pre-filled; cover isn't removable. <br />
+                                  - Sold individually.
+                                  - Imported.</p>
+                                </div>
+
+                                <button class="accordion last">
+                                    <i class="material-icons">add</i>Details + Dimensions
+                                </button>
+                                <div class="panel">
+                                  <p>DIMENSIONS</p> <br />
+                                  <p>- 24"diam. x 13"h.</p> <br />
+                                </div>
+                                
+                            </div>
+                        
                         </div>
-                    
+
                     </div>
 
                 </div>
-
             </div>
-        </div> 
+             
+        </div>
 
         <custom-footer></custom-footer>  
 

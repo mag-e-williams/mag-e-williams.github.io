@@ -183,22 +183,57 @@ div .desc .card-subtitle {
   clear: both;
 }
 
-.column {
+.row {
+  width: 100%;
   float: left;
+  display: block;
 }
 
-.column.fill-half {
+.column {
+
+  float: left;
+  display: inline-block;
+  background-color: white;
+}
+
+.column.c100 {
+  width: 100%;
+}
+
+.column.c90 {
+  width: 90%;
+}
+
+.column.c80 {
+  width: 80%;
+}
+
+.column.c70 {
+  width: 70%;
+}
+
+.column.c60 {
+  width: 60%;
+}
+
+.column.c50 {
   width: 50%;
 }
 
-
-.column.c60 {
-  width: 55%;
+.column.c40 {
+  width: 40%;
 }
 
+.column.c30 {
+  width: 30%;
+}
 
-.column.c40 {
-  width: 45%;
+.column.c20 {
+  width: 20%;
+}
+
+.column.c10 {
+  width: 10%;
 }
 
 .column.sidebar {
@@ -207,6 +242,10 @@ div .desc .card-subtitle {
 
 .column.gallery {
   width: 75%;
+}
+
+#cart {
+
 }
 
 .column.c60.image_pouf {
@@ -248,7 +287,7 @@ div .desc .card-subtitle {
   position: relative;
 }
 
-.column.fill-half.image {
+.header .column.c50.image {
   background-image: url("../assets/images/header_images/image5.png");
   height: 520px;
   background-position: center;
@@ -257,8 +296,12 @@ div .desc .card-subtitle {
   position: relative;
 }
 
-.column.fill-half.blue-background {
+.blue-background {
   background-color: #F0F5F8;
+
+}
+
+.header .column.c50.blue-background {
   height: 520px;
   background-position: center;
   background-repeat: no-repeat;
@@ -299,7 +342,8 @@ p.subtitle {
 a.button { 
 
   text-decoration: none;
-
+  display: block;
+  margin: auto;
   background: #3D383B;
   border-radius: 5px;
   padding: 20px 50px;
@@ -315,8 +359,20 @@ a.button {
   letter-spacing: 0.1em;
 
   color: #FFFFFF;
-
+  text-align: center;
 } 
+
+#cart a.button {
+  width: 100%;
+  margin: 40px 0px;
+}
+
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between
+}
 
 a.button:hover {
   background-color: #181618;
@@ -465,13 +521,13 @@ div.detail-page.text {
   border-radius: 50%;
 }
 
-.container input {
+.radio-container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
 
-.container {
+.radio-container {
   display: block;
   position: relative;
   padding-left: 35px;
@@ -482,20 +538,30 @@ div.detail-page.text {
 }
 
 .dark-blue {
-  background-color: #00338B
+  background-color: #00338B;
+  color: #00338B;
 }
 
 .yellow {
-  background-color: #FDD154
+  background-color: #FDD154;
+  color: #FDD154;
 
 }
 
 .pink {
-  background-color: #FCCAC6
+  background-color: #FCCAC6;
+  color: #FCCAC6;
 }
 
 .light-blue {
-  background-color: #B9DAE9
+  background-color: #B9DAE9;
+  color: #B9DAE9;
+
+}
+
+#cart.form-group {
+  width: 110px;
+  margin: 30px;
 }
 
 
@@ -529,3 +595,141 @@ div.detail-page.text {
   margin-left: 10px;
 
 }
+
+
+#cart .cart {
+  border-top: 0.5px solid #E5E5E5;
+}
+
+.cart-totals {
+  padding-left: 75px;
+}
+
+.cart-totals .card {
+  padding: 0px 10px;
+}
+
+table, th, td {
+  border: 0px;
+  border-collapse: collapse;
+  font-family: "Helvetica"
+}
+
+table {
+  width: 100%
+}
+
+th, td {
+  text-align: left;
+}
+
+th {
+  padding: 18px 10px;
+}
+
+td {
+  padding: 7px 10px;
+}
+
+table td:last-child, table tfoot th:last-child {
+ text-align: right;
+}
+
+
+tfoot {
+  border-top: 0.5px solid #E5E5E5;
+}
+
+tfoot, thead {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+tbody {
+  font-size: 13px 
+}
+
+table.show-cart p {
+  font-family: "Helvetica";
+  font-size: 13px;
+  margin: 3px 0;
+}
+
+table.show-cart h2 {
+  font-family: "Helvetica";
+  font-size: 13px;
+  font-weight: bold;
+  margin: 3px 0;
+
+}
+
+button.delete-item.clear-cart {
+  background-color: white; /* Green */
+  border: none;
+  padding: none;
+}
+
+button.delete-item.clear-cart i {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button.plus-item, button.minus-item {
+  background-color: #E7E7E7; /* Green */
+  border: 0.5px solid #E5E5E5;
+  height: 30px;
+    line-height: 1.25;
+
+}
+
+button.plus-item i, button.minus-item i {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.show-cart td.cart-item-img {
+  width: 100px;
+  padding: none;
+}
+
+.show-cart td.cart-item-name {
+  width: 325px;
+}
+
+.show-cart td.cart-item-total, .show-cart td.cart-item-clear {
+  max-width: 100px;
+  text-align: right;
+}
+
+
+.show-cart td.cart-item-count {
+  min-width: 110px;
+}
+
+.show-cart input {
+  height: 30px;
+  border: 0.5px solid #E5E5E5;
+  width: 30px;
+  margin: 0px;
+  padding: 5px;
+  display: inline-block;
+  line-height: 1.25;
+}
+
+.show-cart a {
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

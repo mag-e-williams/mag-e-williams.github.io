@@ -7,7 +7,7 @@ var products = [
 
     {
     'name': 'Basic Down Alternative Pillow', 
-    'product_id': 1,
+    'id': 1,
     'imgName' : 'image11.png', 
     'category': categories[1], 
     'description': "Something we can never get enough of? Va-va-velvet. Our Lush Velvet Pouf offers convenient, fashion-forward seating with a touch of glam.",
@@ -22,7 +22,7 @@ var products = [
     },
     {
     'name': 'Luxe Down Alternative Pillow', 
-    'product_id': 2,
+    'id': 2,
     'imgName' : 'image13.png', 
     'category': categories[1], 
     'description': "Something we can never get enough of? Va-va-velvet. Our Lush Velvet Pouf offers convenient, fashion-forward seating with a touch of glam.",
@@ -37,7 +37,7 @@ var products = [
     },
     {
     'name': 'Basic Down Pillow', 
-    'product_id': 3,
+    'id': 3,
     'imgName' : 'image15.png', 
     'category': categories[1], 
     'description': "Something we can never get enough of? Va-va-velvet. Our Lush Velvet Pouf offers convenient, fashion-forward seating with a touch of glam.",
@@ -52,7 +52,7 @@ var products = [
     },
     {
     'name': 'Luxe Down Pillow', 
-    'product_id': 4,
+    'id': 4,
     'imgName' : 'image14.png', 
     'category': categories[1], 
     'description': "Something we can never get enough of? Va-va-velvet. Our Lush Velvet Pouf offers convenient, fashion-forward seating with a touch of glam.",
@@ -67,7 +67,7 @@ var products = [
     },
     {
     'name': 'Synthetic Pillow', 
-    'product_id': 5,
+    'id': 5,
     'imgName' : 'image10.png', 
     'category': categories[1], 
     'description': "Something we can never get enough of? Va-va-velvet. Our Lush Velvet Pouf offers convenient, fashion-forward seating with a touch of glam.",
@@ -82,7 +82,7 @@ var products = [
     },
     {
     'name': 'Metallic Embroidered Pillow', 
-    'product_id': 6,
+    'id': 6,
     'imgName' : 'image11-2.png', 
     'category': categories[0], 
     'description': "Something we can never get enough of? Va-va-velvet. Our Lush Velvet Pouf offers convenient, fashion-forward seating with a touch of glam.",
@@ -97,7 +97,7 @@ var products = [
     },
     {
     'name': 'Tie-Dye Pillow', 
-    'product_id': 7,
+    'id': 7,
     'imgName' : 'image13-2.png', 
     'category': categories[0], 
     'description': "Something we can never get enough of? Va-va-velvet. Our Lush Velvet Pouf offers convenient, fashion-forward seating with a touch of glam.",
@@ -112,7 +112,7 @@ var products = [
     },
     {
     'name': 'Earth Tones Patchwork Pillow', 
-    'product_id': 8,
+    'id': 8,
     'imgName' : 'image14-2.png', 
     'category': categories[0], 
     'description': "Something we can never get enough of? Va-va-velvet. Our Lush Velvet Pouf offers convenient, fashion-forward seating with a touch of glam.",
@@ -127,7 +127,7 @@ var products = [
     },
     {
     'name': 'Corded Color Pillow', 
-    'product_id': 9,
+    'id': 9,
     'imgName' : 'image15-1.png', 
     'category': categories[0], 
     'description': "Something we can never get enough of? Va-va-velvet. Our Lush Velvet Pouf offers convenient, fashion-forward seating with a touch of glam.",
@@ -142,7 +142,7 @@ var products = [
     },
     {
     'name': 'Velvet Cross Pillow', 
-    'product_id': 10,
+    'id': 10,
     'imgName' : 'image16.png', 
     'category': categories[0], 
     'description': "Something we can never get enough of? Va-va-velvet. Our Lush Velvet Pouf offers convenient, fashion-forward seating with a touch of glam.",
@@ -157,7 +157,7 @@ var products = [
     },
     {
     'name': 'Corded Decorative Pillow', 
-    'product_id': 11,
+    'id': 11,
     'imgName' : 'image9-1.png', 
     'category': categories[0], 
     'description': "Something we can never get enough of? Va-va-velvet. Our Lush Velvet Pouf offers convenient, fashion-forward seating with a touch of glam.",
@@ -172,7 +172,7 @@ var products = [
     },
     {
     'name': 'Velvet Round Floor Pouf', 
-    'product_id': 12,
+    'id': 12,
     'imgName' : 'image9.png', 
     'category': categories[2], 
     'description': "Something we can never get enough of? Va-va-velvet. Our Lush Velvet Pouf offers convenient, fashion-forward seating with a touch of glam.",
@@ -187,7 +187,7 @@ var products = [
     },
     {
     'name': 'Velvet Square Floor Pouf', 
-    'product_id': 13,
+    'id': 13,
     'imgName' : 'image11-1.png', 
     'category': categories[2], 
     'description': "Something we can never get enough of? Va-va-velvet. Our Lush Velvet Pouf offers convenient, fashion-forward seating with a touch of glam.",
@@ -202,7 +202,7 @@ var products = [
     },
     {
     'name': 'Sherpa Floor Pouf – Low', 
-    'product_id': 14,
+    'id': 14,
     'imgName' : 'image13-1.png', 
     'category': categories[2], 
     'description': "Something we can never get enough of? Va-va-velvet. Our Lush Velvet Pouf offers convenient, fashion-forward seating with a touch of glam.",
@@ -217,7 +217,7 @@ var products = [
     },
     {
     'name': 'Sherpa Floor Pouf – High', 
-    'product_id': 15,
+    'id': 15,
     'imgName' : 'image14-1.png', 
     'category': categories[2], 
     'description': "Something we can never get enough of? Va-va-velvet. Our Lush Velvet Pouf offers convenient, fashion-forward seating with a touch of glam.",
@@ -256,7 +256,7 @@ function createProductCards(cardData, sectionID){
         tmpl.querySelector('.name').innerText = card.name;
         tmpl.querySelector('.price').innerText = "$" + card.price.toString();
         tmpl.querySelector('.custom-card-img').src = "./assets/images/product_images/" + card.imgName;
-        tmpl.querySelector('.product-link').href = "./product_pages/" + detail_page + "#" + card.product_id.toString();
+        tmpl.querySelector('.product-link').href = "./product_pages/" + detail_page + "#" + card.id.toString();
 
         var cardList = document.getElementById(sectionID);
 
@@ -268,7 +268,7 @@ function createProductCards(cardData, sectionID){
 // function to create product detail using template 
 function createProductDetail(){
     var productID = window.location.toString().split("#")[1]
-    var detailProduct = products.find(product => product.product_id == productID)
+    var detailProduct = products.find(product => product.id == productID)
 
     document.getElementById("product_price").innerHTML = "$" + detailProduct.price
     document.getElementById("product_description").innerHTML = detailProduct.description
@@ -282,6 +282,37 @@ function createProductDetail(){
 
 }
 
+
+
+function createCartItems(){
+    var cartItems = shoppingCart.listCart();
+    cartRows = "";
+
+    for (var i = 0; i < cartItems.length; i++) {
+        product = cartItems[i];
+        productDetail = products.find(item => item.id == product.id);
+        var formattedPrice = Number(productDetail.price).toFixed(2)
+        cartRows 
+            += "<tr>"
+
+                + "<td class='cart-item-img'><img class='custom-cart-item-img' src='assets/images/product_images/" + productDetail.imgName + "' width='100' height='125' alt='pillows'></td>"
+                + "<td class='cart-item-name' valign='top'><a href='./product_pages/" + detail_page + "#" + product.id + "'><h2>" + product.name + "</h2></a><p>$" + formattedPrice + "</p></td>" 
+                + "<td class='cart-item-count' valign='top'><div class='input-group'><button class='minus-item input-group-addon' data-id=" + product.id + "><i class='material-icons'>remove</i></button>"
+                    + "<input  class='item-count form-control' data-id='" + product.id + "' value='" + product.count + "'>"
+                    + "<button class='plus-item input-group-addon' data-id=" + product.id + "><i class='material-icons'>add</i></button></div></td>"
+                + "<td class='cart-item-total' valign='top'><p>$" + product.total + "</p></td>" 
+                + "<td class='cart-item-clear' valign='top'><button class='delete-item clear-cart' data-id=" + product.id + "><i class='material-icons'>clear</i></button></td>"
+
+            +  "</tr>";
+    }
+
+    $('.show-cart').html(cartRows);
+
+    
+
+}
+
+
 var urlString = window.location;
 
 function isIndexPage() {
@@ -290,6 +321,10 @@ function isIndexPage() {
 
 function isProductsPage() {
     return urlString.toString().includes("products")
+}
+
+function isCartPage() {
+    return urlString.toString().includes("cart")
 }
 
 function isProductDetailPage() {
@@ -319,10 +354,12 @@ function renderPage() {
 var shoppingCart = (function() {
     cart = [];
 
-    function Item(name, price, count) {
+    function Item(name, price, count, id) {
         this.name = name;
         this.price = price;
         this.count = count;
+        this.id = id;
+
     }
 
     function saveCart() {
@@ -338,31 +375,34 @@ var shoppingCart = (function() {
 
     var obj = {};
 
-    obj.addItemToCart = function(name, price, count) {
+    obj.addItemToCart = function(id) {
+
+        var productDetail = products.find(product => product.id == id)
+
         for(var item in cart) {
-            if(cart[item].name === name) {
+            if(cart[item].id === id) {
                 cart[item].count ++;
                 saveCart();
                 return;
             }
         }
-        var item = new Item(name, price, count);
+        var item = new Item(productDetail.name, productDetail.price, 1, productDetail.id);
         cart.push(item);
         saveCart();
     }
 
-    obj.setCountForItem = function(name, count) {
+    obj.setCountForItem = function(id, count) {
         for(var i in cart) {
-            if (cart[i].name === name) {
+            if (cart[i].id === id) {
                 cart[i].count = count;
                 break;
             }
         }
     };
 
-    obj.removeItemFromCart = function(name) {
+    obj.removeItemFromCart = function(id) {
         for(var item in cart) {
-            if(cart[item].name === name) {
+            if(cart[item].id === id) {
                 cart[item].count --;
                 if(cart[item].count === 0) {
                     cart.splice(item, 1);
@@ -373,9 +413,9 @@ var shoppingCart = (function() {
         saveCart();
     }
 
-    obj.removeItemFromCartAll = function(name) {
+    obj.removeItemFromCartAll = function(id) {
         for(var item in cart) {
-            if(cart[item].name === name) {
+            if(cart[item].id === id) {
                 cart.splice(item, 1);
                 break;
             }
@@ -424,20 +464,71 @@ var shoppingCart = (function() {
 
 
 function displayCart() {
-    document.getElementById("cart-amt").innerHTML = shoppingCart.totalCount()
+    // cart nav badge
+    document.getElementById("cart-amt").innerHTML = shoppingCart.totalCount();
+
+    var formattedSubtotal = shoppingCart.totalCart().toFixed(2)
+    var shipping = 7.50;
+
+    if (shoppingCart.totalCart() == 0) {
+        shipping = 0;
+    }
+
+    var formattedTotal = (shoppingCart.totalCart()+shipping).toFixed(2)
+
+
+    if (isCartPage()) {
+        document.getElementById("cart-subtotal").innerHTML = "$" + formattedSubtotal;
+        document.getElementById("cart-shipping").innerHTML = "$" + shipping.toFixed(2);
+        document.getElementById("cart-total").innerHTML = "$" + formattedTotal;
+    
+        createCartItems()
+    }
 }
+
+
+
+$('.show-cart').on("click", ".delete-item", function(event) {
+    console.log("delete");
+    var id = $(this).data('id');
+    console.log(id);
+    shoppingCart.removeItemFromCartAll(id);
+    displayCart();
+})
+
+
+// -1
+$('.show-cart').on("click", ".minus-item", function(event) {
+    console.log("minus");
+
+    var id = $(this).data('id')
+    shoppingCart.removeItemFromCart(id);
+    displayCart();
+})
+
+// +1
+$('.show-cart').on("click", ".plus-item", function(event) {
+    console.log("plus");
+
+    var id = $(this).data('id');
+
+    shoppingCart.addItemToCart(id);
+    displayCart();
+})
 
 
 $('.add-to-cart').click(function(event) {
     var productID = window.location.toString().split("#")[1]
-    var detailProduct = products.find(product => product.product_id == productID)
+    var detailProduct = products.find(product => product.id == productID)
 
-    shoppingCart.addItemToCart(detailProduct.name, detailProduct.price, 1);
+    shoppingCart.addItemToCart(detailProduct.id);
 
     displayCart();
 });
 
-$('.clear-cart').click(function() {
+
+$('.clear-cart').click(function(event) {
+    console.log("click");
     shoppingCart.clearCart();
     displayCart();
 });
@@ -445,12 +536,6 @@ $('.clear-cart').click(function() {
 
 
 renderPage()
-
-
-
-
-
-
 
 
 

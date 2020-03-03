@@ -18,56 +18,61 @@
     
     <body>
 
-        <custom-nav pageName="index"></custom-nav>
+        <div class="flex-wrapper">
 
-        <div class="row">
-            <div class="column fill-half image">
-            </div>
+        <div class="container">
 
-            <div class="column fill-half blue-background">
-                <div class="index-page banner-text">
-                    <p class="subtitle">Sweet Dreams</p>
-                    <h1>Build a Perfect Night's Sleep</h1>
-                    <a href="products.html" class="button">Shop All Pillows</a>
+            <custom-nav pageName="index"></custom-nav>
+
+            <div class="header row">
+                <div class="column c50 image">
                 </div>
-            </div>
-        </div> 
 
-        <div class="content"> 
-        <p class="subtitle">Bestsellers</p>
-        <h1>Check Out What Customers Like Most</h1>
-
-        <div class="bestsellers-gallery">
-
-            <div id="bestsellers-cards">
-
-                <!-- Product Card Template -->
-                <template id="card-template">
-                    <div class="responsive bestsellers">
-                      <div class="gallery">
-                        <a class="product-link" href="product_pages/decorative_pillow.html#1">
-                          <img class="custom-card-img" src="assets/images/product_images/image9-1.png" width="325" height="405" alt="pillows">
-                        </a>
-                        <div class="desc">
-                            <p class="card-title name">       
-                            </p>
-                            <p class="card-subtitle price">
-                            </p>
-                        </div>
-                      </div>
+                <div class="column c50 blue-background">
+                    <div class="index-page banner-text">
+                        <p class="subtitle">Sweet Dreams</p>
+                        <h1>Build a Perfect Night's Sleep</h1>
+                        <a href="products.html" class="button">Shop All Pillows</a>
                     </div>
-                </template>
-                <!-- End of Template -->
+                </div>
+            </div> 
+
+            <div class="content"> 
+            <p class="subtitle">Bestsellers</p>
+            <h1>Check Out What Customers Like Most</h1>
+
+            <div class="bestsellers-gallery">
+
+                <div id="bestsellers-cards">
+
+                    <!-- Product Card Template -->
+                    <template id="card-template">
+                        <div class="responsive bestsellers">
+                          <div class="gallery">
+                            <a class="product-link" href="product_pages/decorative_pillow.html#1">
+                              <img class="custom-card-img" src="assets/images/product_images/image9-1.png" width="325" height="405" alt="pillows">
+                            </a>
+                            <div class="desc">
+                                <p class="card-title name">       
+                                </p>
+                                <p class="card-subtitle price">
+                                </p>
+                            </div>
+                          </div>
+                        </div>
+                    </template>
+                    <!-- End of Template -->
+
+                </div>
 
             </div>
 
+            <!-- end of bestsellers gallery -->
+            
+            </div>
+            <!-- end of content -->
         </div>
-
-        <!-- end of bestsellers gallery -->
         
-        </div>
-        <!-- end of content -->
-    
         <custom-footer></custom-footer>
 
 
