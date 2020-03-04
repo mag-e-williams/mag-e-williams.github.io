@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+
+        <link href="https://fonts.googleapis.com/css?family=Ropa+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+        <meta name="description" content="Fluff Stuff">
+        <meta name="author" content="Margret Williams">
+        <title>Fluff Stuff</title>
+
+    </head>
+    
+    <body>
+        <div class="flex-wrapper">
+
+        <div class="container">
+
+
+        <custom-nav pageName="cart"></custom-nav>
+            <div id="cart">
+
+                <div class="column c10 gutter">
+                &nbsp;
+                </div>
+
+                <div class="column c80">
+
+                    <div class="row">
+                        <h2>Shopping Bag</h2>
+
+
+                    </div>
+
+                    <div class="column c60 cart">
+                        <table class="show-cart table">
+
+                        </table>                        
+                    </div>
+
+                    <div class="column c40 cart-totals">
+                        <div class="row">
+                            <div class="card blue-background">
+                                
+                                <table>
+                                  <thead>
+                                    <tr>
+                                      <th colspan="2">Order Summary</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>Subtotal</td>
+                                      <td id="cart-subtotal">$?</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Estimated Shipping</td>
+                                      <td id="cart-shipping">$?</td>
+                                    </tr>
+                                  </tbody>
+                                  <tfoot>
+                                    <tr>
+                                      <th>Estimated Total</th>
+                                      <th id="cart-total">$?</th>
+                                    </tr>
+                                  </tfoot>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <a href="" class="button">Check Out</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="column c10 gutter">
+                &nbsp;
+                </div>
+            
+            </div>
+
+        </div>
+
+        <custom-footer></custom-footer>
+
+        </div>
+
+    <script src="./js/CustomNav.js"></script>
+    <script src="./js/CustomFooter.js"></script>
+
+    <script src="./js/products.js"></script>
+
+    </body>
+    
+</html>
