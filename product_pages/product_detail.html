@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+
+        <link href="https://fonts.googleapis.com/css?family=Ropa+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../css/styles.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+
+        <meta name="description" content="Fluff Stuff">
+        <meta name="author" content="Margret Williams">
+        <title>Fluff Stuff</title>
+
+    </head>
+    
+    <body>
+
+        <div class="flex-wrapper">
+
+        <div class="container">
+        
+            <custom-nav pageName="product_detail"></custom-nav>
+
+            <div class="row">
+
+                <div class="product-detail">
+
+                    <div class="column c60 image_pouf" id="product_img">
+                    </div>
+
+                    <div class="column c40 detail">
+                        <div class="detail-page text">
+                            <h1 id="product_name">Product Name
+                            </h1>
+                            <p class="reviews icons">
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star_border</i>
+                            </p>
+                            <p class="details-subtitle">
+                                13 reviews
+                            </p>
+                            <p id="product_description"> product description 
+                            </p>
+
+                            <br />
+
+                            <div>
+                                <h3 id="product_price">
+                                    product price 
+                                </h3>
+                            </div>
+
+                            <div class="color-select">
+
+                                <p class="details-subtitle">
+                                    4 colors available:
+                                </p>
+
+                                <label class="radio-container">
+                                  <input type="radio" checked="checked" name="radio">
+                                  <span class="checkmark dark-blue"></span>
+                                </label>
+                                <label class="radio-container">
+                                  <input type="radio" name="radio">
+                                  <span class="checkmark yellow"></span>
+                                </label>
+                                <label class="radio-container">
+                                  <input type="radio" name="radio">
+                                  <span class="checkmark pink"></span>
+                                </label>
+                                <label class="radio-container">
+                                  <input type="radio" name="radio">
+                                  <span class="checkmark light-blue"></span>
+                                </label>
+                            </div>
+
+
+                            <a class="add-to-cart button">Add To Cart</a>
+
+
+                            <div class="product-accordion">
+
+                                <button class="accordion active">
+                                    <i class="material-icons">add</i>Overview
+                                </button>
+                                <div class="panel" style="display: block;">
+                                  <p>KEY DETAILS <br />
+                                  - Shell: 75% rayon, 25% nylon. <br />
+                                  - Filling: Polyester and foam. <br />
+                                  - Pre-filled; cover isn't removable. <br />
+                                  - Sold individually.
+                                  - Imported.</p>
+                                </div>
+
+                                <button class="accordion last">
+                                    <i class="material-icons">add</i>Details + Dimensions
+                                </button>
+                                <div class="panel">
+                                  <p>DIMENSIONS</p> <br />
+                                  <p>- 24"diam. x 13"h.</p> <br />
+                                </div>
+                                
+                            </div>
+                        
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+             
+        </div>
+
+        <custom-footer></custom-footer>  
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+    </script>
+
+    <script src="../js/CustomNav.js"></script>
+    <script src="../js/CustomFooter.js"></script>
+
+    <script src="../js/shoppingCart.js"></script>
+    <script src="../js/products.js"></script>
+
+
+    </body>
+    
+</html>
+

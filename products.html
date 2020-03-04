@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+
+        <link href="https://fonts.googleapis.com/css?family=Ropa+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+        <meta name="description" content="Fluff Stuff">
+        <meta name="author" content="Margret Williams">
+        <title>Fluff Stuff</title>
+
+    </head>
+    
+    <body>
+        <div class="flex-wrapper">
+
+        <div class="container">
+
+            <custom-nav pageName="products"></custom-nav>
+
+            <div class="image-banner">
+              <div class="banner-text">
+                <h1>Products</h1>
+              </div>
+            </div>
+
+            <div class="content row">
+
+                <div class="column sidebar">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="#bed_pillows">Bed Pillows</a>
+                        </li>
+                        <li><a href="#decorative_pillows">Decorative Pillows</a>
+                        </li>
+                        <li><a href="#poufs">Floor Poufs</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="column gallery">
+
+                <!-- BED PILLOWS -->
+
+                <h1 id="bed_pillows">Bed Pillows</h1>
+
+                <div class="product_gallery">
+
+                    <div id="bedPillow-cards">
+
+                        <!-- Product Card Template -->
+                        <template id="card-template">
+                            <div class="responsive bed_pillows">
+                              <div class="gallery">
+                                <a class="product-link" href="product_pages/decorative_pillow.html#1">
+                                  <img class="custom-card-img" src="assets/images/product_images/image9-1.png" width="325" height="405" alt="pillows">
+                                </a>
+                                <div class="desc">
+                                    <p class="card-title name">       
+                                    </p>
+                                    <p class="card-subtitle price">
+                                    </p>
+                                </div>
+                              </div>
+                            </div>
+                        </template>
+                        <!-- End of Template -->
+
+                    </div>
+
+                </div>
+
+
+                <div class="clearfix"></div>
+
+                <!-- DECORATIVE PILLOWS -->
+                <h1 id="decorative_pillows">Decorative Pillows</h1>
+
+                <div class="product_gallery">
+
+                    <div id="decorativePillow-cards">
+
+                        <!-- Product Card Template -->
+                        <template id="card-template">
+                            <div class="responsive decorative_pillows">
+                              <div class="gallery">
+                                <a class="product-link" href="product_pages/decorative_pillow.html#1">
+                                  <img class="custom-card-img" src="assets/images/product_images/image9-1.png" width="325" height="405" alt="pillows">
+                                </a>
+                                <div class="desc">
+                                    <p class="card-title name">       
+                                    </p>
+                                    <p class="card-subtitle price">
+                                    </p>
+                                </div>
+                              </div>
+                            </div>
+                        </template>
+                        <!-- End of Template -->
+
+                    </div>
+
+                </div>
+
+
+                <div class="clearfix"></div>
+
+
+                <!-- POUFS -->
+                <h1 id="poufs">Poufs</h1>
+
+                <div id="pouf-cards">
+
+                        <!-- Product Card Template -->
+                        <template id="card-template">
+                            <div class="responsive poufs">
+                              <div class="gallery">
+                                <a class="product-link" href="product_pages/decorative_pillow.html#1">
+                                  <img class="custom-card-img" src="assets/images/product_images/image9-1.png" width="325" height="405" alt="pillows">
+                                </a>
+                                <div class="desc">
+                                    <p class="card-title name">       
+                                    </p>
+                                    <p class="card-subtitle price">
+                                    </p>
+                                </div>
+                              </div>
+                            </div>
+                        </template>
+                        <!-- End of Template -->
+
+                    </div>
+
+                </div>        
+
+
+
+                <div class="clearfix"></div>
+            
+            <div>
+            <!-- END OF GALLERY -->
+            </div>
+            </div>
+            </div>
+            
+        </div>
+        
+    <custom-footer></custom-footer>
+
+    <script src="./js/CustomNav.js"></script>
+    <script src="./js/CustomFooter.js"></script>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/products.js"></script>
+
+
+    </body>
+    
+    
+</html>

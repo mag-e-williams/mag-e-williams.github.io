@@ -1,1 +1,88 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+
+        <link href="https://fonts.googleapis.com/css?family=Ropa+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+        <meta name="description" content="Fluff Stuff">
+        <meta name="author" content="Margret Williams">
+        <title>Fluff Stuff</title>
+
+    </head>
+    
+    <body>
+
+        <div class="flex-wrapper">
+
+        <div class="container">
+
+            <custom-nav pageName="index"></custom-nav>
+
+            <div class="header row">
+                <div class="column c50 image">
+                </div>
+
+                <div class="column c50 blue-background">
+                    <div class="index-page banner-text">
+                        <p class="subtitle">Sweet Dreams</p>
+                        <h1>Build a Perfect Night's Sleep</h1>
+                        <a href="products.html" class="button">Shop All Pillows</a>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="content"> 
+            <p class="subtitle">Bestsellers</p>
+            <h1>Check Out What Customers Like Most</h1>
+
+            <div class="bestsellers-gallery">
+
+                <div id="bestsellers-cards">
+
+                    <!-- Product Card Template -->
+                    <template id="card-template">
+                        <div class="responsive bestsellers">
+                          <div class="gallery">
+                            <a class="product-link" href="product_pages/decorative_pillow.html#1">
+                              <img class="custom-card-img" src="assets/images/product_images/image9-1.png" width="325" height="405" alt="pillows">
+                            </a>
+                            <div class="desc">
+                                <p class="card-title name">       
+                                </p>
+                                <p class="card-subtitle price">
+                                </p>
+                            </div>
+                          </div>
+                        </div>
+                    </template>
+                    <!-- End of Template -->
+
+                </div>
+
+            </div>
+
+            <!-- end of bestsellers gallery -->
+            
+            </div>
+            <!-- end of content -->
+        </div>
+        
+        <custom-footer></custom-footer>
+
+
+    <script src="./js/CustomNav.js"></script>
+    <script src="./js/CustomFooter.js"></script>
+
+    <script src="./js/products.js"></script>
+
+
+    </body>
+    
+    
+</html>
