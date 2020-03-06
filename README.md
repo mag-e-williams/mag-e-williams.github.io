@@ -10,8 +10,8 @@ See assignment write-up in **./assets/assignmentWriteup.pdf**
 
 ### 1.  Create a NEW page
 
-New Page Created: Shopping Cart Page in **./assets/assignmentWriteup.pdf**
-High Fidelity wireframe for page found in project folder at **./ShoppingCart_HighFidelityWireframe**
+New Page Created: Shopping Cart Page in **./cart.html**
+High Fidelity wireframe for page found in project folder at **./6A Writeup_Prototypes.pdf**
 
 
 ### 2. Create NEW features for site
