@@ -1,0 +1,86 @@
+.hero-text {
+    font-family: Roboto Mono;
+    font-style: bold;
+    font-weight: normal;
+    font-size: 200px;
+    line-height: 180px;
+    letter-spacing: 0.05em;
+    margin-top: 0px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #DAA797;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .hero-text {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .hero-text {
+    font-size: 100px;
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .hero-text {font-size: 100px;}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .hero-text {
+        font-size: 200px;
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .hero-text {    
+        font-size: 200px;
+    }
+}
+
+
+.navbar-nav {
+    margin-left: 80px;
+    margin-top: 40px;
+}
+
+.navbar {
+    padding-top: 150px
+}
+
+a.nav-link {
+    padding: 4px 8px;
+}
+
+.navbar-toggler {
+    position: absolute;
+    float: right;
+    top: 50px;
+}
+
+
+.list-inline-svg {
+    width: 42px;
+    height: 72px;
+    display: inline-block;
+    margin-right: .5rem;
+}
+
+.list-inline-svg i {
+}
+
+.list-inline-svg svg {
+    padding-bottom: 10px;
+    fill:  #868e96;
+}
+
+.list-inline-svg svg:hover {
+    fill: #BD5D38 ;
+
+}
