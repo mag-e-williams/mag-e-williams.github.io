@@ -297,13 +297,13 @@ span.strikethrough:hover:after {
 }
 
 .overlay a {
-    font-size: 45px
+    font-size: 40px
 }
 
 .overlay nav {
   position: relative;
-  height: 60%;
-  top: 55%;
+  height: 70%;
+  top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -312,13 +312,15 @@ span.strikethrough:hover:after {
   z-index: 999;
 }
 
-.overlay svg {
-    height: 45%
-}
-
 .overlay-menu {
     margin-left: 60px;
-    margin-top: 40px;
+    margin-top: 50px;
+}
+
+.overlay svg {
+    position: relative;
+    width: 110%;
+    left: -20px;
 }
 
 @-webkit-keyframes fadeInRight {
