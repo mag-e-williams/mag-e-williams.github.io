@@ -75,7 +75,7 @@ p.lead {
 }
 
 .social-icons a:hover {
-  color: #BD5D38 !important;
+  color: #DCDCDC !important;
 }
 
 .dev-icons {
@@ -83,7 +83,7 @@ p.lead {
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: #BD5D38;
+  color: #DCDCDC;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {

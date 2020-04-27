@@ -86,12 +86,16 @@ a.nav-link {
 }
 
 .list-inline-svg svg:hover {
-    fill: #BD5D38 ;
+    fill: #DCDCDC ;
 }
 
+#experience .section-header {
+    margin-top: 80px;
+}
 
-
-
+.text-offwhite {
+    color: #DCDCDC
+}
 
 
 
