@@ -23,7 +23,7 @@
     background-color: #AB2A1E;
 }
 
-.orange_text {
+.orange_text, .orange_text *{
     color: #C2511C;
 }
 

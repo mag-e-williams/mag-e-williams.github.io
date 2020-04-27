@@ -92,14 +92,17 @@ p.lead {
   text-transform: uppercase;
 }
 
-#sideNav .navbar-toggler:focus {
-  outline-color: #d48a6e;
+.col.button {
+  max-width: 47px;
 }
+
+
+
 
 @media (min-width: 992px) {
   #sideNav {
     text-align: center;
-    position: fixed;
+    /*position: fixed;*/
     top: 0;
     left: 0;
     display: flex;
@@ -175,6 +178,26 @@ a {
 }
 
 a:hover, a:focus, a:active {
-  color: #824027;
-  text-decoration: strikethrough;
+  color: red;
 }
+
+.col {
+  outline: 1px solid red;
+}
+
+.container {
+  outline: 1px solid blue;
+
+}
+
+.container-fluid {
+  outline: 1px solid green;
+
+}
+
+
+
+
+
+
+
