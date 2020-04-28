@@ -12,6 +12,9 @@
 #header-icon {
     margin: 10px;
 }
+#header-icon svg {
+    width: 80px;
+}
 
 .pink-outline {
     -webkit-text-stroke-width: 2px;
@@ -142,6 +145,49 @@ span.strikethrough:hover:after {
 }
 
 
+
+
+
+span.overlay-strikethrough {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  width: fit-content;
+}
+
+span.overlay-strikethrough:before, span.overlay-strikethrough:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 10px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: #C2511C;
+}
+
+span.overlay-strikethrough:before {
+  left: -2.5px;
+}
+span.overlay-strikethrough:after {
+  right: 2.5px;
+  background: #C2511C;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span.overlay-strikethrough:hover:before {
+  background: #C2511C;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span.overlay-strikethrough:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
+
+
 /*NAVIGATION OVERLAY*/
 
 .nav-container {
@@ -206,6 +252,7 @@ span.strikethrough:hover:after {
   opacity: 1;
 }
 
+
 .button_container.active .top {
   -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
   -ms-transform: translateY(11px) translateX(0) rotate(45deg);
@@ -238,6 +285,7 @@ span.strikethrough:hover:after {
   cursor: pointer;
 }
 
+
 .button_container span:nth-of-type(2) {
   top: 11px;
   width: 60%;
@@ -266,7 +314,6 @@ span.strikethrough:hover:after {
   opacity: 1;
   visibility: visible;
   height: 100%;
-  z-index: 99;
 }
 
 .overlay.open li {
@@ -297,7 +344,11 @@ span.strikethrough:hover:after {
 }
 
 .overlay a {
-    font-size: 40px
+    Roboto Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+
 }
 
 .overlay nav {
@@ -309,7 +360,7 @@ span.strikethrough:hover:after {
   transform: translateY(-50%);
   font-weight: 700;
   text-align: left;
-  z-index: 999;
+  /*z-index: 999;*/
 }
 
 .overlay-menu {
@@ -318,9 +369,10 @@ span.strikethrough:hover:after {
 }
 
 .overlay svg {
-    position: relative;
-    width: 110%;
-    left: -20px;
+    position: fixed;
+    bottom: -15px;
+    left: -10px;
+    width: 105%
 }
 
 @-webkit-keyframes fadeInRight {
