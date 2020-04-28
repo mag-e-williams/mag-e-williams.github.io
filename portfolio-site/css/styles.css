@@ -13,7 +13,7 @@
     margin: 10px;
 }
 #header-icon svg {
-    width: 80px;
+    width: 100px;
 }
 
 .pink-outline {
@@ -210,7 +210,6 @@ span.overlay-strikethrough:hover:after {
   text-align: left;
   color: #C2511C;
   text-decoration: none;
-  font-size: 20px;
   overflow: hidden;
   top: 5px;
 }

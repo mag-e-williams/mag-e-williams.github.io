@@ -30,9 +30,15 @@
 $('#toggle').click(function() {
   $(this).toggleClass('active');
   $('#overlay').toggleClass('open');
+  $('#header-icon').toggle();
+  $('#sideNav').toggle();
+
 });
 $('.overlay-menu a').click(function() {
   $('.button_container').toggleClass('active');
   $('#overlay').toggleClass('open');
+  $('#header-icon').toggle();
+  $('#sideNav').toggle();
+
   return false;
 });
