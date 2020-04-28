@@ -30,119 +30,6 @@
 #navbar {
     margin-top: 40px
 }
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .hero-text {
-        font-size: 30px;
-        writing-mode: vertical-rl;
-        text-orientation: mixed;
-        margin-left: 0px;
-        line-height: 1em;
-        margin: auto;
-        margin-top: 40px;
-    }
-
-    .overlay-menu {
-        margin-left: 40px;
-        margin-top: 30px;
-    }
-
-    .container.header {
-        padding: 0px 30px 0px 0px;
-        margin-right: 10px
-    }
-
-    body {
-        padding-left: 10px
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-  .hero-text {
-        font-size: 120px;
-        line-height: .9em;
-        letter-spacing: 1px;
-    }
-
-
-    .container.header {
-        padding: 0px 30px 0px 0px;
-        margin-right: 10px
-    }
-
-    body {
-        padding-left: 10px
-    } 
-} 
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .hero-text {
-        font-size: 150px;
-        line-height: .9em;
-        letter-spacing: 1px;
-    }
-
-
-    .container.header {
-        padding: 0px 30px 0px 0px;
-        margin-right: 10px
-    }
-
-    body {
-        padding-left: 10px
-    } 
-} 
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 900px) {
-  .hero-text {
-        font-size: 150px;
-        line-height: .9em;
-        letter-spacing: 1px;
-    }
-
-
-
-    body {
-        padding-left: 10px
-    } 
-} 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 1200px) {
-    .hero-text {
-        font-size: 200px;
-        letter-spacing: .01em;
-    }
-
-
-    .container.header {
-        padding: 0px 30px;
-        margin-right: 10px
-    }  
-
-    body {
-        padding-left: 170px
-    } 
- 
-} 
-
-
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1500px) {
-    .hero-text {    
-        font-size: 220px;
-        /*font-weight: bolder;*/
-        letter-spacing: .01em
-
-    }
-    body {
-        padding-left: 220px;
-    } 
-}
 
 a.nav-link {
     padding: 4px 8px;
@@ -473,4 +360,122 @@ span.overlay-strikethrough:hover:after {
 
 .row#navbar {
     width: 200px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .hero-text {
+        font-size: 30px;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        margin-left: 0px;
+        line-height: 1em;
+        margin: auto;
+        margin-top: 40px;
+    }
+    .container {
+    top: 40px;
+    }
+
+    .overlay-menu {
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+
+    .container.header {
+        padding: 0px 30px 0px 0px;
+        margin-right: 10px
+    }
+
+    body {
+        padding-left: 10px
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .hero-text {
+        font-size: 120px;
+        line-height: .9em;
+        letter-spacing: 1px;
+    }
+
+
+    .container.header {
+        padding: 0px 30px 0px 0px;
+        margin-right: 10px
+    }
+
+    body {
+        padding-left: 10px
+    } 
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .hero-text {
+        font-size: 150px;
+        line-height: .9em;
+        letter-spacing: 1px;
+    }
+
+
+    .container.header {
+        padding: 0px 30px 0px 0px;
+        margin-right: 10px
+    }
+
+    body {
+        padding-left: 10px
+    } 
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 900px) {
+  .hero-text {
+        font-size: 150px;
+        line-height: .9em;
+        letter-spacing: 1px;
+    }
+
+
+
+    body {
+        padding-left: 10px
+    } 
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1200px) {
+    .hero-text {
+        font-size: 200px;
+        letter-spacing: .01em;
+    }
+
+
+    .container.header {
+        padding: 0px 30px;
+        margin-right: 10px
+    }  
+
+    body {
+        padding-left: 170px
+    } 
+ 
+} 
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1500px) {
+    .hero-text {    
+        font-size: 220px;
+        /*font-weight: bolder;*/
+        letter-spacing: .01em
+
+    }
+    body {
+        padding-left: 220px;
+    } 
 }
