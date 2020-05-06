@@ -211,7 +211,8 @@ span.overlay-strikethrough:hover:after {
     left: 0;
     max-width: 100%;
     padding:0px 80px;
-    z-index: 50
+    z-index: 500;
+    height:50px;
 }
 
 .button_container:hover {
@@ -249,6 +250,7 @@ span.overlay-strikethrough:hover:after {
   -webkit-transition: all .35s ease;
   transition: all .35s ease;
   cursor: pointer;
+  z-index: 900
 }
 
 
@@ -281,7 +283,7 @@ span.overlay-strikethrough:hover:after {
   opacity: 1;
   visibility: visible;
   height: 100%;
-  z-index: 0;
+  z-index: 600;
 }
 
 .overlay.open li {
@@ -686,4 +688,8 @@ section#projects.resume-section  h1 {
     margin-right: 48px !important;
 }
 
-/**/
+.social-icons a:hover {
+  cursor: pointer;
+  position: relative;
+  z-index: 40
+}

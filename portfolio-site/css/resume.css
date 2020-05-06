@@ -283,5 +283,7 @@ a {
   bottom: 0;
 }
 
-
-
+.social-icons {
+  position: relative;
+  z-index: 40
+}
