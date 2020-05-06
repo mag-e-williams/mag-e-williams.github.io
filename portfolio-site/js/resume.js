@@ -32,8 +32,9 @@ $('#toggle').click(function() {
   $('#overlay').toggleClass('open');
   $('#header-icon').toggle();
   $('#sideNav').toggle();
-
 });
+
+
 $('.overlay-menu a').click(function() {
   $('.button_container').toggleClass('active');
   $('#overlay').toggleClass('open');
@@ -42,3 +43,58 @@ $('.overlay-menu a').click(function() {
 
   return false;
 });
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+$(function () {
+
+  var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+
+          event.preventDefault();
+          // event.stopPropagation();
+
+          console.log("fuck")
+        }
+        else {
+
+
+          console.log("validation")
+        }
+        form.classList.add('was-validated');
+      }, false);
+
+    });
+
+})
+
+
+if ( window.history.replaceState ) {
+  window.history.replaceState( null, null, window.location.href );
+}
+
+$('#contact-form').submit(function () {
+  'use strict';
+  var forms = document.getElementsByClassName('needs-validation');
+  // Loop over them and prevent submission
+  var validation = Array.prototype.filter.call(forms, function(form) {
+    form.addEventListener('submit', function(event) {
+      if (form.checkValidity() === false) {
+        event.preventDefault();
+      }
+      else {
+        document.getElementById("contact-form").reset();
+        $('#form-modal').modal('show');
+      }
+      form.classList.add('was-validated');
+    }, false);
+  });
+  return false;
+});
+
+

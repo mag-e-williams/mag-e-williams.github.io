@@ -20,6 +20,7 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link href="css/resume.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
   <link href="css/system_colors.css" rel="stylesheet">
@@ -28,8 +29,8 @@
 
 <body id="page-top" class="teal_background">
 
-
-  <div class="nav-container">
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav-container">
 
     <div class="overlay pink_background" id="overlay">
 
@@ -58,11 +59,14 @@
           </li>
         </ul>
       </nav>
-
     </div>
-  </div>
 
-  <div class="container header">
+  </div>
+  <!-- END OF MOBILE NAV -->
+
+
+  <div class="header" id="header">
+
     <div class="row">
 
       <div class="col">
@@ -78,7 +82,7 @@
 
       <div class="col button">
         <span class="test">
-          <div class="button_container hidden" id="toggle">
+          <div class="button_container" id="toggle">
             <span class="top"></span>
             <span class="middle"></span>
             <span class="bottom"></span>
@@ -88,8 +92,8 @@
 
     </div>
 
-    <div class="row" id="navbar">
-      <div class="col">
+    <div class="" id="navbar">
+      <div class="">
 
         <nav class="navbar navbar-expand-lg navbar-light" id="sideNav">
 
@@ -115,7 +119,6 @@
         </nav>
 
       </div>
-
   
     </div>
   </div>
@@ -125,6 +128,8 @@
 
   <div class="container-fluid p-0">
 
+
+    <!-- HERO SECTION -->
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="landing-page">
       <div class="w-100">
         <h1 class="mb-0 hero-text teal_text pink-outline">Margret Williams
@@ -149,19 +154,45 @@
         </div>
       </div>
     </section>
+    <!-- END OF HERO SECTION -->
 
     <hr class="m-0">
 
+    <!-- ABOUT SECTION -->
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
       <div class="w-100">
         <h1 class="mb-5 pink-outline teal_text">About Me</h1>
-        <p>Text about me</p>
    
+        <div class="row">
+
+          <div class="col-md col-md-5 col-lg-6">
+            <img src="img/profile_circle.png" class="img-fluid" alt="Photo of Maggie Williams">
+          </div>
+
+          <div class="col-md col-md-7 col-lg-6" id="about-text">
+
+            <p>
+              Hi, my name is Maggie Williams.
+            </p>
+
+            <p>
+             I am an engineer and designer studying <a href="https://www.cmu.edu/information-systems/" target="_blank" class="Link">Information Systems</a> and
+            <a href="https://www.hcii.cmu.edu/" target="_blank" class="Link">Human Computer Interaction</a>  at <a href="https://www.cmu.edu/" target="_blank" class="Link"> Carnegie Mellon University</a> 
+            </p>
+
+          </div>
+
+
+        </div>
+
+
       </div>
     </section>
+    <!-- END OF BLACK SECTION -->
 
     <hr class="m-0">
 
+    <!-- XP SECTION -->
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
       <div class="w-100">
         <h1 class="mb-5 pink-outline teal_text">Experience</h1>
@@ -254,22 +285,56 @@
             <span class="pink_text">May 2017 - August 2017</span>
           </div>
         </div>
-
-    </section>
+    </section>  
+    <!-- END OF XP SECTION -->
 
     <hr class="m-0">
+</div>
+<!-- END OF CONTAINER -->
 
+    <!-- PROJECTS SECTION -->
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
       <div class="w-100">
         <h1 class="mb-5 pink-outline teal_text">Projects</h1>
 
+<!--             <h3 class="mb-0 text-offwhite">Engineering</h3>
 
+            <h3 class="mb-0 text-offwhite">Design</h3>
+
+            <h3 class="mb-0 text-offwhite">Fabrication</h3> -->
+
+<!-- <img src="img/profile_circle.png" class="gallery-img" alt="Responsive image">
+ -->
+
+<div class="row">
+  <div class="col-lg-12 col-md-10 ">
+    <div class="cover-container">
+      <!-- START PANEL -->
+      <div class="cover-item" style="background-image: url('img/project_gallery/cura.png')"></div>
+      <div class="cover-item" style="background-image: url('img/project_gallery/hearsay.png')"></div>
+      <div class="cover-item" style="background-image: url('img/project_gallery/Plant.jpg')"></div>
+      <div class="cover-item" style="background-image: url('img/project_gallery/Carassonne.jpg')"></div>
+      <div class="cover-item" style="background-image: url('img/project_gallery/Pascalle.JPG')"></div>
+      <div class="cover-item" style="background-image: url('img/project_gallery/mealtime.png')"></div>
+      <div class="cover-item" style="background-image: url('img/project_gallery/atlantis.png')"></div>
+      <div class="cover-item" style="background-image: url('img/project_gallery/chair.jpg')"></div>
+      <div class="cover-item" style="background-image: url('img/project_gallery/cura.png')"></div>
+      <div class="cover-item" style="background-image: url('img/project_gallery/bttn.png')"></div>
+
+      <!-- END PANEL -->
+    </div>
+  </div>
+</div>
       </div>
     </section>
+    <!-- END OF PROJECTS SECTION -->
 
+<!-- START OF CONTAINER 2 -->
+  <div class="container-fluid p-0">
 
     <hr class="m-0">
 
+    <!-- SKILLS SECTION -->
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
       <div class="w-100">
         <h1 class="mb-5 teal_text pink-outline">Skills</h1>
@@ -277,6 +342,7 @@
         <div class="subheading green_text mb-3">Programming Languages</div>
         <ul class="list-inline dev-icons">
           
+        
           <li class="list-inline-item">
             <i class="fab fa-java" data-toggle="tooltip" data-placement="bottom" title="Java"></i>
           </li>
@@ -393,16 +459,137 @@
 
       </div>
     </section>
-
+    <!-- END OF SKILLS SECTION -->
     
     <hr class="m-0">
 
+    <!-- CONTACT SECTION -->
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="contact">
       <div class="w-100">
         <h1 class="mb-5 pink-outline teal_text">Contact Me</h1>
+
+        <form class="needs-validation" novalidate id="contact-form" action="" role="form">
+
+          <div class="messages"></div>
+
+          <div class="controls">
+
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_name">                            
+                            <div class="subheading green_text mb-3">
+                            First Name<sup>*</sup>
+                            </div>
+                          </label>
+                          <input id="form_name" type="text" name="name" class="form-control teal_background" required="required">
+                          <div class="invalid-feedback">
+                            Please provide your first name
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_lastname">                            
+                            <div class="subheading green_text mb-3">
+                            Last Name<sup>*</sup>
+                            </div>
+                          </label>
+                          <input id="form_lastname" type="text" name="surname" class="form-control  teal_background" required="required">
+                          <div class="invalid-feedback">
+                            Please provide your last name
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_email">                            
+                            <div class="subheading green_text mb-3">
+                            Email<sup>*</sup>
+                            </div>
+                          </label>
+                          <input id="form_email" type="email" name="email" class="form-control  teal_background" required="required">
+                          <div class="invalid-feedback">
+                            Please provide a valid email address
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_phone">
+                            <div class="subheading green_text mb-3">
+                            Company/Organization
+                            </div>
+                          </label>
+                          <input id="form_phone" type="tel" name="phone" class="form-control  teal_background">
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="form-group">
+                          <label for="form_message">
+                            <div class="subheading green_text mb-3">
+                            Message<sup>*</sup>
+                            </div>
+                          </label>
+                          <textarea id="form_message" name="message" class="form-control  teal_background" rows="4" required="required"></textarea>
+                          <div class="invalid-feedback">
+                            Please provide message content
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-12">
+                      <button type="submit" value="Submit" class="btn btn-send submit"> 
+                        <h3 class="mb-0">
+                        Send Message
+                        </h3>
+                      </button>
+                            <!-- <input class="submit" type="submit" value="Submit"> -->
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <p> <sup>*</sup> Starred fields are required</p>
+                </div>
+              </div>
+          </div>
+
+      </form>
+
       
       </div>
+
+      <!-- Pop-up Modal -->
+      <div class="modal fade" id="form-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="green_text modal-title" id="exampleModalLabel">
+                <i class="green_text fas fa-check"></i> 
+                Message Sent
+              </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h2 class="pink_text">Thanks For Reaching Out!</h2>
+              <p >I'll try to get back to you as soon as possible :)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Pop-up Modal -->
+
     </section>
+    <!-- END OF CONTACT SECTION -->
 
   </div>
 
@@ -421,6 +608,21 @@
   <script src="./js/RailsSVG.js"></script>
   <script src="./js/MongoSVG.js"></script>
 
+
+
+<script>
+
+
+
+
+// (function() {
+//     // Fetch all the forms we want to apply custom Bootstrap validation styles to
+
+// })();
+
+
+
+</script>
 
 </body>
 

@@ -8,6 +8,7 @@ body {
   font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   padding-top: 54px;
   color: #D2D2D2;
+  margin: auto
 }
 
 @media (min-width: 992px) {
@@ -25,7 +26,6 @@ h6 {
   font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: 700;
   text-transform: uppercase;
-  color: #343a40;
 }
 
 h1 {
@@ -89,11 +89,13 @@ p.lead {
   font-weight: 800;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .col.button {
-  max-width: 47px;
+  max-width: 35px;
+  position: fixed;
+  right: 30px;
 }
 
 
@@ -107,7 +109,6 @@ p.lead {
     left: 0;
     display: flex;
     flex-direction: column;
-    width: 17rem;
     height: 100vh;
   }
   #sideNav .navbar-brand {
@@ -177,26 +178,27 @@ a {
   color: #BD5D38;
 }
 
-a:hover, a:focus, a:active {
-  color: red;
+.cover-container
+{
+    height: fit-content;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
-/*.col {
-  outline: 1px solid red;
+.cover-item
+{
+    position: relative;
+    display: inline-block;
+    margin: 8px 30px 8px 0px;
+    width: 600px;
+    height: 450px;
+    vertical-align: bottom;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
-.container {
-  outline: 1px solid blue;
-
-}
-
-.container-fluid {
-  outline: 1px solid green;
-
-}
-*/
-
-
 
 
 
